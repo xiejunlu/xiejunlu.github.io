@@ -1,0 +1,11 @@
+.container {
+	width: 1100px;
+	height:auto;
+	margin:0 auto;
+	text-align: center;
+}
+
+.image {
+	width:1100px;
+	height:1000px;
+}
