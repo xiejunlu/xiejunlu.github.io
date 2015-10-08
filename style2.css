@@ -1,0 +1,21 @@
+body{
+    font-family: Avenir Next, sans-serif;
+    font-size:40pt;
+}
+
+.container {
+	width: 1100px;
+	height:auto;
+	margin:0 auto;
+	text-align: center;
+}
+
+a {
+    opacity: 0.6;
+	text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.3;
+	color: rgb(235,43,138);
+}
