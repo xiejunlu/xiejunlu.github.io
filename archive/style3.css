@@ -1,0 +1,160 @@
+body{
+    font-family: Avenir Next, sans-serif;
+    font-size:25pt;
+    color:white;
+    text-align:center;
+}
+
+
+audio {
+	display:none;
+}
+
+
+.box {
+	width: 75px;
+	height: 480px;
+	background-color: red;
+	display: inline-block;
+	margin:15px;
+}
+
+.box1 {
+	width: 60px;
+	height: 190px;
+	background-color: red;
+	display: inline-block;
+	margin:15px;
+}
+
+.box2 {
+	width: 40px;
+	height: 510px;
+	background-color: red;
+	display: inline-block;
+	margin:15px;
+}
+
+.box3 {
+	width: 35px;
+	height: 300px;
+	background-color: red;
+	display: inline-block;
+	margin:15px;
+}
+
+.bg{
+	background:url(carlosbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg1{
+	background:url(clarissabg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg2{
+	background:url(junlubg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg3{
+	background:url(kyungbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg4{
+	background:url(laurambg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg5{
+	background:url(lauratbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg6{
+	background:url(mrinalbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg7{
+	background:url(mylesbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg8{
+	background:url(nicolebg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg9{
+	background:url(nikolettabg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg10{
+	background:url(pedrobg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg11{
+	background:url(perlabg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg12{
+	background:url(tzubg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+.bg13{
+	background:url(youngbg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+
+
+
+.container {
+	/*vw is the same as percent*/
+	width: 100vw;
+	height:600px;
+	
+}
+
+.inside-container {
+	width:1900px;
+	position: absolute;
+	left:500px;
+	top:10px;
+	animation: sarahMoves 20s infinite;
+}
+ 
+@keyframes sarahMoves {
+	0% { left: -1000px;  }
+	100% { left: 600px; }
+}
+
+a {
+    opacity: 0.6;
+	text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+	color: red;
+}
