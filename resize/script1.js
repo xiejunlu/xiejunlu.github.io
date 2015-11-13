@@ -10,7 +10,7 @@ for(var i = 0; i < 10; i++) {
 $("#box_8").click(function() {
 	var randomNum = Math.round(Math.random() * 4 + 1);
 	var newColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-	var randomArrayNumber = Math.round(Math.random() * 4);;
+	var randomArrayNumber = Math.round(Math.random() * 6);
 	var array = ["ALL", "I", "WANT", "FOR", "CHRISTMAS","IS","YOU"];
   
     $("body").css("background-color",newColor);
