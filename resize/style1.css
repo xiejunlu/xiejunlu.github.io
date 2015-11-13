@@ -1,0 +1,279 @@
+.box {
+	width:9%;
+	height:50px;
+	background-color: rgb(0,62,128);
+	margin:5px 0.5%;
+	display:inline-block;
+	z-index: 1;
+}
+
+#box_1 {
+	width:9%;
+	height:50px;
+	background-color:red;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:20.3%;
+	top:69px;
+	background-size: 100%;
+	background-position: center;
+	text-align:center;
+	font-size:14pt;
+}
+
+#box_2 {
+	width:9%;
+	height:50px;
+	background-color:pink;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:10.4%;
+	top:128px;
+	background-size: 100%;
+	background-position: center;
+	text-align:center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_3 {
+	width:9%;
+	height:50px;
+	background-color:yellow;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:10.4%;
+	top:188px;
+	background-size: 100%;
+	background-position: center;
+	text-align:center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_4 {
+	width:9%;
+	height:50px;
+	background-color:brown;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:10.4%;
+	top:247px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_5 {
+	width:9%;
+	height:50px;
+	background-color:green;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:20.3%;
+	top:307px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_6 {
+	width:9%;
+	height:50px;
+	background-color:purple;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:30.2%;
+	top:367px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_7 {
+	width:9%;
+	height:50px;
+	background-color:grey;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:40%;
+	top:427px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_8 {
+	width:9%;
+	height:50px;
+	background-color:orange;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:30.2%;
+	top:69px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:12pt;
+	font-family:sans-serif;
+}
+
+#box_9 {
+	width:9%;
+	height:50px;
+	background-color:cyan;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:40%;
+	top:128px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_10 {
+	width:9%;
+	height:50px;
+	background-color:darkred;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:50%;
+	top:69px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_11 {
+	width:9%;
+	height:50px;
+	background-color:darksalmon;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:59.9%;
+	top:69px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_12 {
+	width:9%;
+	height:50px;
+	background-color:hotpink;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:69.8%;
+	top:128px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_13 {
+	width:9%;
+	height:50px;
+	background-color:lavender;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:69.8%;
+	top:247px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_14 {
+	width:9%;
+	height:50px;
+	background-color:coral;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:69.8%;
+	top:188px;
+	text-align:center;
+	background-size: 100%;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_15 {
+	width:9%;
+	height:50px;
+	background-color:lightcoral;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:50%;
+	top:367px;
+	background-size: 100%;
+	text-align:center;
+	background-position: center;
+	font-size:14pt;
+	font-family:sans-serif;
+}
+
+#box_16 {
+	width:9%;
+	height:50px;
+	background-color:red;
+	margin:5px 0.5%;
+	position: absolute;
+	/*z-index is layering*/
+	z-index: 1000;
+	left:59.9%;
+	top:307px;
+	background-size: 100%;
+	text-align:center;
+	font-size:14pt;
+	font-family:sans-serif;
+	background-position: center;
+}
