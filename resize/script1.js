@@ -8,22 +8,23 @@ for(var i = 0; i < 10; i++) {
 // console.log(randomNum);
 
 $("#box_8").click(function() {
-	var randomNum = Math.round(Math.random() * 4 + 1);
 	var newColor = '#' + Math.floor(Math.random()*16777215).toString(16);
 	var randomArrayNumber = Math.round(Math.random() * 6);
 	var array = ["ALL", "I", "WANT", "FOR", "CHRISTMAS","IS","YOU"];
-  
+	var fireworks = ["firework1.gif", "firework2.gif", "firework3.gif", "firework4.gif","firework5.gif"];
+    var randomfire = fireworks[Math.floor(Math.random()*5)];
+    
     $("body").css("background-color",newColor);
     
 // console.log(randomNum);
     
-	$("#box_1").css("background-image", "url(images/firework" + randomNum + ".gif");
-	$("#box_3").css("background-image", "url(images/firework" + randomNum + ".gif");
-	$("#box_5").css("background-image", "url(images/firework" + randomNum + ".gif");
-	$("#box_10").css("background-image", "url(images/firework" + randomNum + ".gif");
-	$("#box_13").css("background-image", "url(images/firework" + randomNum + ".gif");
-	$("#box_12").css("background-image", "url(images/firework" + randomNum + ".gif");
-	$("#box_7").css("background-image", "url(images/firework" + randomNum + ".gif");
+	$("#box_1").append("<img src='img/" + randomfire + "'>");
+	$("#box_3").css("background-image","<img src='images/" + randomfire + "'>");
+	$("#box_5").css("background-image","<img src='images/" + randomfire + "'>");
+	$("#box_10").css("background-image","<img src='images/" + randomfire + "'>");
+	$("#box_13").css("background-image","<img src='images/" + randomfire + "'>");
+	$("#box_12").css("background-image","<img src='images/" + randomfire + "'>");
+	$("#box_7").css("background-image","<img src='images/" + randomfire + "'>");
 
 	//	add a randomized beverage to the yellow box
 	

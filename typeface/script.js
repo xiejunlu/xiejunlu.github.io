@@ -1,17 +1,15 @@
 
 $(function() {
     $(".draggable").draggable();
-    
-    
-    $(".shape").mousedown(function(e) {
-        console.log('hi');
+    $(".box").mousedown(function(e) {
+      console.log(e.toElement)
+        $('.box').append("<div class=\"" + e.toElement.classList[0] + " draggable\"> </div>");
         $(e.toElement).addClass("dragged");
-        $('.shape').append("<div class=\"" + e.toElement.classList[0] + " draggable\"> </div>");
         $(".draggable").draggable();
     });
-    
-    
     $(".clear").click(function() {
         $(".dragged").remove();
     });
 });
+
+

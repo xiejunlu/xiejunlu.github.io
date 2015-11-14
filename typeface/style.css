@@ -12,14 +12,44 @@ body {
   height: 100vh;
 }
 
+.image1 {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    width: 50px;
+    height: 100px;
+    background: url('s1.png');
+}
+.image2 {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    width: 50px;
+    height: 100px;
+    background: url('s2.png');
+}
+.image3 {
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    width: 50px;
+    height: 100px;
+    background: url('s3.png');
+}
+.image4 {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    width: 50px;
+    height: 100px;
+    background: url('s4.png');
+}
 
 .shape {
     margin:auto;
     display: inline-block;
     min-width: 700px;
     background-color: rgba(255, 0, 255, 0.5);
-    
-    
 }
 
 .clear {
@@ -39,17 +69,17 @@ body {
     left: 0;
 }
 
-.boxwrapper{
+.boxwrapper {
     vertical-align: top;
     padding: 10px;
     display: inline-block;
-    background: rgba(0, 255, 0, 0.5);    
+    background: rgba(0, 255, 0, 0.5);
 }
 
-.canvaswrapper{
+.canvaswrapper {
     padding: 10px;
     display: inline-block;
-    background: rgba(255, 0, 0, 0.5);    
+    background: rgba(255, 0, 0, 0.5);
 }
 
 
@@ -61,12 +91,12 @@ body {
   display: inline-block;
   vertical-align: top;
   /*top: 50px;*/
-  width: 100px;
+  width: 150px;
   height: 500px;
 }
 
 .canvas {
-    width: 500px;
+    width: 800px;
     height: 500px;
     /*position: absolute;*/
     /*left: 150px;*/
