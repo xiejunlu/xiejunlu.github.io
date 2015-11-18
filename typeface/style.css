@@ -15,7 +15,7 @@ body {
 .image1 {
     position: absolute;
     top: 120px;
-    left: 60px;
+    left: 50px;
     width: 50px;
     height: 100px;
     background: url('s1.png');
@@ -30,21 +30,213 @@ body {
 }
 .image3 {
     position: absolute;
-    top: 230px;
-    left: 60px;
+    top: 120px;
+    left: 150px;
     width: 50px;
     height: 100px;
     background: url('s3.png');
 }
 .image4 {
     position: absolute;
-    top: 230px;
-    left: 100px;
+    top: 120px;
+    left: 200px;
     width: 50px;
     height: 100px;
     background: url('s4.png');
 }
+.image5 {
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    width: 50px;
+    height: 100px;
+    background: url('s5.png');
+}
+.image6 {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    width: 50px;
+    height: 100px;
+    background: url('s6.png');
+}
+.image7 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 50px;
+    height: 100px;
+    background: url('s7.png');
+}
+.image8 {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    width: 50px;
+    height: 100px;
+    background: url('s8.png');
+}
+.image9 {
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background: url('s9.png');
+}
+.image10 {
+    position: absolute;
+    top: 210px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    background: url('s10.png');
+}
+.image11 {
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background: url('s11.png');
+}
+.image12 {
+    position: absolute;
+    top: 210px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: url('s12.png');
+}
+.image13 {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    width: 50px;
+    height: 100px;
+    background: url('c1.png');
+}
+.image14 {
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    width: 50px;
+    height: 100px;
+    background: url('c2.png');
+}
+.image15 {
+    position: absolute;
+    top: 270px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    background: url('c3.png');
+}
+.image16 {
+    position: absolute;
+    top: 270px;
+    left: 200px;
+    width: 50px;
+    height: 100px;
+    background: url('y1.png');
+}
+.image17 {
+    position: absolute;
+    top: 270px;
+    left: 250px;
+    width: 50px;
+    height: 100px;
+    background: url('y2.png');
+}
+.image19 {
+    position: absolute;
+    top: 270px;
+    left: 300px;
+    width: 50px;
+    height: 100px;
+    background: url('y3.png');
+}
 
+.image20 {
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    background: url('s13.png');
+}
+.image21 {
+    position: absolute;
+    top: 360px;
+    left: 140px;
+    width: 100px;
+    height: 50px;
+    background: url('s14.png');
+}
+.image22 {
+    position: absolute;
+    top: 360px;
+    left: 230px;
+    width: 100px;
+    height: 50px;
+    background: url('s15.png');
+}
+.image23 {
+    position: absolute;
+    top: 410px;
+    left: 230px;
+    width: 100px;
+    height: 50px;
+    background: url('s16.png');
+}
+.image24 {
+    position: absolute;
+    top: 410px;
+    left: 140px;
+    width: 100px;
+    height: 50px;
+    background: url('c4.png');
+}
+.image25 {
+    position: absolute;
+    top: 410px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    background: url('c5.png');
+}
+.image26 {
+    position: absolute;
+    top: 460px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    background: url('c6.png');
+}
+.image27 {
+    position: absolute;
+    top: 460px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    background: url('y4.png');
+}
+.image28 {
+    position: absolute;
+    top: 460px;
+    left: 250px;
+    width: 100px;
+    height: 50px;
+    background: url('y5.png');
+}
+.image29 {
+    position: absolute;
+    top: 500px;
+    left: 250px;
+    width: 100px;
+    height: 50px;
+    background: url('y6.png');
+}
 .shape {
     margin:auto;
     display: inline-block;
@@ -62,11 +254,11 @@ body {
     border: 2px outset buttonface;
     background-color: buttonface;
     box-sizing: border-box;
-    height: 5%;
+    height: 4%;
     display:inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 90px;
+    left: 1000px;
 }
 
 .boxwrapper {
@@ -91,15 +283,32 @@ body {
   display: inline-block;
   vertical-align: top;
   /*top: 50px;*/
-  width: 150px;
-  height: 500px;
+  width: 300px;
+  height: 550px;
 }
 
 .canvas {
     width: 800px;
-    height: 500px;
+    height: 550px;
     /*position: absolute;*/
     /*left: 150px;*/
     z-index: 0;
     background-image: url("canvasbg.jpg");
+}
+.inspire{
+    align-items: flex-start;
+    font-family: sans-serif;
+    text-align: inline-block;
+    cursor: default;
+    color: buttontext;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+    background-color: buttonface;
+    box-sizing: border-box;
+    height: 4%;
+    display:inline-block;
+    position: absolute;
+    top:90px;
+    left:900px;
+    
 }

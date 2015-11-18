@@ -9,7 +9,12 @@ $(function() {
     });
     $(".clear").click(function() {
         $(".dragged").remove();
+        $(".canvas").css("background-image", "url(canvasbg.jpg");
     });
 });
 
-
+$(".inspire").click(function() {
+  var randomNum = Math.floor(Math.random() * 4);
+  console.log(randomNum);
+  $(".canvas").css("background-image", "url(bg" + randomNum + ".png");
+});
