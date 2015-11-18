@@ -1,8 +1,14 @@
+$(document).ready(function(){
+    setTimeout(function(){$("#first").hide();},7000);
+});
+
+
+
 
 $(function() {
     $(".draggable").draggable();
     $(".box").mousedown(function(e) {
-      console.log(e.toElement)
+      console.log(e.toElement);
         $('.box').append("<div class=\"" + e.toElement.classList[0] + " draggable\"> </div>");
         $(e.toElement).addClass("dragged");
         $(".draggable").draggable();
