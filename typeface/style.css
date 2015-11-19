@@ -15,19 +15,20 @@ body {
 #first{
      z-index: 1500;
      position:absolute;
-     width:1200px;
+     width:1400px;
      height: 900px;
      background-color:rgb(250,250,250);
-     /*left:100px;*/
-     /*top:100px;*/
+     background-image: url("first.gif");
+     left:0px;
+     top:0px;
 }
 
-.image{
-    z-index: 1500;
-    position:absolute;
-    left: 100px;
-    top:50px;
-}
+/*.image{*/
+/*    z-index: 1500;*/
+/*    position:absolute;*/
+/*    left: 100px;*/
+/*    top:50px;*/
+/*}*/
 
 .image1 {
     position: absolute;
@@ -249,7 +250,7 @@ body {
 .image26 {
     position: absolute;
     top: 460px;
-    left: 50px;
+    left: 30px;
     width: 100px;
     height: 50px;
     background: url('c6.png');
@@ -258,16 +259,17 @@ body {
 .image27 {
     position: absolute;
     top: 460px;
-    left: 150px;
+    left: 110px;
     width: 50px;
     height: 50px;
     background: url('y4.png');
     z-index: 1;
 }
+
 .image28 {
     position: absolute;
     top: 460px;
-    left: 250px;
+    left: 150px;
     width: 100px;
     height: 50px;
     background: url('y5.png');
@@ -275,11 +277,74 @@ body {
 }
 .image29 {
     position: absolute;
-    top: 500px;
+    top: 460px;
     left: 250px;
     width: 100px;
     height: 50px;
     background: url('y6.png');
+    z-index: 1;
+}
+.image32 {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    width: 100px;
+    height: 50px;
+    background: url('s19.png');
+    z-index: 1;
+}
+.image31 {
+    position: absolute;
+    top: 500px;
+    left: 130px;
+    width: 100px;
+    height: 50px;
+    background: url('s18.png');
+    z-index: 1;
+}
+.image30 {
+    position: absolute;
+    top: 500px;
+    left: 70px;
+    width: 100px;
+    height: 50px;
+    background: url('s17.png');
+    z-index: 1;
+}
+.image33 {
+    position: absolute;
+    top: 500px;
+    left: 260px;
+    width: 100px;
+    height: 50px;
+    background: url('s20.png');
+    z-index: 1;
+}
+.image34 {
+    position: absolute;
+    top: 540px;
+    left: 190px;
+    width: 50px;
+    height: 90px;
+    background: url('t1.png');
+    z-index: 1;
+}
+.image35 {
+    position: absolute;
+    top: 550px;
+    left: 120px;
+    width: 50px;
+    height: 90px;
+    background: url('z1.png');
+    z-index: 1;
+}
+.image36 {
+    position: absolute;
+    top: 540px;
+    left: 60px;
+    width: 50px;
+    height: 90px;
+    background: url('y7.png');
     z-index: 1;
 }
 .shape {
@@ -333,13 +398,13 @@ body {
   vertical-align: top;
   /*top: 50px;*/
   width: 300px;
-  height: 550px;
+  height: 570px;
   z-index: 1;
 }
 
 .canvas {
     width: 800px;
-    height: 550px;
+    height: 570px;
     /*position: absolute;*/
     /*left: 150px;*/
     z-index: 0;
