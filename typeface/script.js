@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    setTimeout(function(){$("#first").hide();},7000);
+    setTimeout(function(){$("#first").hide();},6000);
 });
 
 
