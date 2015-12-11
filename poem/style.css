@@ -1,0 +1,25 @@
+
+#wrapper {
+   margin: auto; 
+}
+
+.button {
+    background: #f00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    left:94%;
+}
+
+.change{
+    background: pink;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1000;
+    left:94%;
+    
+}

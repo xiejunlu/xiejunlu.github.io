@@ -83,7 +83,7 @@ var last_x;
 var last_y;
 
 surf.onclick = function(e){
-      if(stamp_num == 1){
+     if(stamp_num == 1){
         stamp_smile(smile, e.offsetX, e.offsetY, 100, 100);
      } else if (stamp_num == 3){
          stamp_cat(cat, e.offsetX, e.offsetY, 300, 300);
@@ -93,15 +93,33 @@ surf.onclick = function(e){
           last_y = e.offsetY;
       }
 };
+
+
+var is_drawing = false;
+
+var last_x_green;
+var last_y_green;
+      
+surf.onmousedown = function(e){
+  is_drawing = true;  
+  last_x_green = e.offsetX;
+  last_y_green = e.offsetY;
+};
+
+surf.onmouseup = function(){
+    is_drawing = false;
+};
       
       
 surf.onmousemove = function(e){
-    if(stamp_num == 2){
-          // var make_line = function(color, x, y, lx, ly, thickness)
-          make_line("rgba(125, 160, 20, 0.8)", e.offsetX, e.offsetY, last_x, last_y, 20);
-          last_x = e.offsetX;
-          last_y = e.offsetY;
-    }else if (stamp_num == 5){
-         stamp_flower(flower, e.offsetX, e.offsetY, 30, 30);
+    if(is_drawing){
+        if(stamp_num == 2){
+              // var make_line = function(color, x, y, lx, ly, thickness)
+              make_line("rgba(125, 160, 20, 0.8)", e.offsetX, e.offsetY, last_x_green, last_y_green, 20);
+              last_x_green = e.offsetX; // offsetX is mouse position of the window offset by the canvas (surf)
+              last_y_green = e.offsetY;
+        } else if (stamp_num == 5){
+             stamp_flower(flower, e.offsetX, e.offsetY, 30, 30);
+        }
     }
 };
