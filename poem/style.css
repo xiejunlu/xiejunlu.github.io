@@ -1,25 +1,86 @@
+.body{
+    font-family:sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
 
-#wrapper {
-   margin: auto; 
+#view-1 {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    /*transform: translate(-50%, -50%);*/
+    /*padding: 50px 50px;*/
+    /*border: 2px solid #333;*/
+    font-family:sans-serif;
+    /*position: fixed;*/
+}
+
+#view-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-family:"avenir",sans-serif;
+    font-weight:bold;
+    background-image:url("text.jpg");
+    background-size: cover;
+    z-index: 1200;
+    position: fixed;
+}
+
+.text-box{
+    font-family:"avenir",sans-serif;
+    font-weight:bold;
+    color:white;
+    z-index: 1200;
+    left:50.5%;
+    top:49%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    font-variant: small-caps;
+    font-size:20pt;
+}
+.indicator{
+    font-family:"avenir",sans-serif;
+    font-weight:bold;
+    font-size:16pt;
+    z-index: 1200;
+    width:40px;
+    height:30px;
+    left:49%;
+    top:61%;
+    position: fixed;
+    color: #fff;
+    
 }
 
 .button {
+    font-family:sans-serif;
     background: #f00;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     position: fixed;
     z-index: 1;
-    left:94%;
+    left:51%;
+    top:60%;
 }
 
 .change{
-    background: pink;
-    width: 20px;
-    height: 20px;
+    background: #f00;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     position: fixed;
     z-index: 1000;
-    left:94%;
+    left:48%;
+    top:58%;
     
 }
