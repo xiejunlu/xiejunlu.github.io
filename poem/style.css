@@ -61,6 +61,7 @@
 }
 
 .new{
+    display:none;
     font-family:"avenir",sans-serif;
     font-weight:bold;
     color:white;
