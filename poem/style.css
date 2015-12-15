@@ -35,6 +35,18 @@
     position: fixed;
 }
 
+.intro{
+    font-family:"avenir",sans-serif;
+    font-size:25pt;
+    width:250px;
+    height:200pt;
+    position: fixed;
+    left:80%;
+    font-weight:bold;
+    z-index: 1200;
+}
+
+
 .text-box{
     font-family:"avenir",sans-serif;
     font-weight:bold;
@@ -45,12 +57,26 @@
     transform: translate(-50%, -50%);
     position: fixed;
     font-variant: small-caps;
-    font-size:20pt;
+    font-size:25pt;
 }
+
+.new{
+    font-family:"avenir",sans-serif;
+    font-weight:bold;
+    color:white;
+    z-index: 1300;
+    left:95%;
+    top:90%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    font-variant: small-caps;
+    font-size:15pt;
+}
+
 .indicator{
     font-family:"avenir",sans-serif;
     font-weight:bold;
-    font-size:16pt;
+    font-size:18pt;
     z-index: 1200;
     width:40px;
     height:30px;

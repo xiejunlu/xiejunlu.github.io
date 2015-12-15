@@ -106,6 +106,8 @@ $(function() {
             // Switch view
             $("#view-1").fadeOut("slow");
             $("#view-2").fadeIn("slow");
+            $('.new').css("display","inline");
+            
 
             // Play sound: this recurse function is to make a queue of sounds and play them in order
             var recurse = function(i) {
@@ -128,10 +130,14 @@ $(function() {
 
 });
 
+$('.new').mouseenter(function() {
+    location.reload();
+});
 
 function hover() {
    var newColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-   $(".change").css("background-color",newColor);
+    $(".change").css("background-color",newColor);
+    $(".intro").css("color",newColor);
 }
 
 function make_circles_dance() {
@@ -141,9 +147,26 @@ function make_circles_dance() {
     $(this).css("top",topPosition).css("left",leftPosition);
     var newSize = Math.floor(Math.random()*106) + "px";
     $(this).css("width",newSize).css("height",newSize);
+    var newColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  $(".button").css("background-color",newColor);
   });
 }
 
+//  function makeCircles() {
+//       $(".button").each(function() {
+//         $(this).show();
+
+//         var wHeight = $(window).height() - 120;
+//         var wWidth = $(window).width() - 120;
+//         var topPosition = Math.random() * wHeight - wHeight/2 + "px";
+//         var leftPosition = Math.random() * wWidth - wWidth/2 + "px";
+
+//         $(this).css("transform", "translate(" + leftPosition + "," + topPosition + ")");
+
+//         var newSize = Math.floor(Math.random() * 100) + "px";
+//         $(this).css("width", newSize).css("height", newSize);
+//       });
+//     }
 
 
 
@@ -151,6 +174,7 @@ function make_circles_dance() {
 $(".change").mouseenter(function() {
     hover();
     make_circles_dance();
+  
 });
 
 $(".change").mouseleave(function() {
