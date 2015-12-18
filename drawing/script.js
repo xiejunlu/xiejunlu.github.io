@@ -88,7 +88,7 @@ surf.onclick = function(e){
      } else if (stamp_num == 3){
          stamp_cat(cat, e.offsetX, e.offsetY, 300, 300);
       } else if(stamp_num == 4){
-          make_line("rgba(0, 0, 0, 1)", e.offsetX, e.offsetY, last_x, last_y, 10);
+          make_line("rgba(110, 11, 23, 1)", e.offsetX, e.offsetY, last_x, last_y, 10);
           last_x = e.offsetX;
           last_y = e.offsetY;
       }
@@ -115,7 +115,7 @@ surf.onmousemove = function(e){
     if(is_drawing){
         if(stamp_num == 2){
               // var make_line = function(color, x, y, lx, ly, thickness)
-              make_line("rgba(125, 160, 20, 0.8)", e.offsetX, e.offsetY, last_x_green, last_y_green, 20);
+              make_line("rgba(125, 160, 120, 0.8)", e.offsetX, e.offsetY, last_x_green, last_y_green, 20);
               last_x_green = e.offsetX; // offsetX is mouse position of the window offset by the canvas (surf)
               last_y_green = e.offsetY;
         } else if (stamp_num == 5){
