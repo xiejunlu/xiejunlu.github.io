@@ -72,6 +72,9 @@ $(function() {
         'word67': 'experience',
         'word68': 'oxygen',
         'word69': 'forward',
+        'word70': 'government',
+        'word71': 'egg',
+        'word72': 'smell',
         
     };
     var getIdxByClassName = function(className) {
