@@ -104,10 +104,14 @@ $(function() {
 
         if (clickedCnt === TOTAL) {
             // Switch view
-            $("#view-1").fadeOut("slow");
-            $("#view-2").fadeIn("slow");
-            $('.new').css("display","inline");
-            
+            $("#view-1").fadeOut("slow").delay(5000).fadeIn("show");
+            $("#view-2").fadeIn("slow").delay(5000).fadeOut('slow', function() {
+                clicked = [];
+            });
+            $('.indicator').html('0/5');
+            make_circles_dance();
+            clickedCnt = 0;
+
 
             // Play sound: this recurse function is to make a queue of sounds and play them in order
             var recurse = function(i) {
@@ -128,10 +132,6 @@ $(function() {
         }
     })
 
-});
-
-$('.new').mouseenter(function() {
-    location.reload();
 });
 
 function hover() {
@@ -174,6 +174,9 @@ function make_circles_dance() {
 $(".change").mouseenter(function() {
     hover();
     make_circles_dance();
+    $('.indicator').css("display","inline");
+    $('.intro').addClass("hide");
+    
   
 });
 

@@ -22,28 +22,26 @@
 
 #view-2 {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%;
     font-family:"avenir",sans-serif;
     font-weight:bold;
-    background-image:url("text.jpg");
-    background-size: cover;
+    background-color:black;
     z-index: 1200;
-    position: fixed;
 }
 
 .intro{
-    font-family:"avenir",sans-serif;
-    font-size:25pt;
-    width:250px;
-    height:200pt;
-    position: fixed;
-    left:80%;
+    font-family:"avenir", sans-serif;
+    font-size:10pt;
+    text-transform: uppercase;
     font-weight:bold;
     z-index: 1200;
+    text-align: center;
+    margin-top: 10px;
+    -webkit-transition: opacity, 300ms, ease;
 }
 
 
@@ -52,12 +50,15 @@
     font-weight:bold;
     color:white;
     z-index: 1200;
-    left:50.5%;
-    top:49%;
+    left:50%;
+    top:50%;
     transform: translate(-50%, -50%);
     position: fixed;
     font-variant: small-caps;
-    font-size:25pt;
+    font-size:34px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
 }
 
 .new{
@@ -75,16 +76,22 @@
 }
 
 .indicator{
+    display:none;
     font-family:"avenir",sans-serif;
     font-weight:bold;
     font-size:18pt;
+    /*line-height: 1;*/
     z-index: 1200;
-    width:40px;
-    height:30px;
-    left:49%;
-    top:61%;
-    position: fixed;
+    /*width:80px;*/
+    /*height:30px;*/
+    /*left:50%;*/
+    top:40%;
+    /*margin-top:20px;*/
+    position: absolute;
     color: #fff;
+    transform: translate(-50%, -50%);
+    /*cursor: default;*/
+
     
 }
 
@@ -96,18 +103,29 @@
     border-radius: 50%;
     position: fixed;
     z-index: 1;
-    left:51%;
-    top:60%;
+    cursor: pointer;
+    top: 0;
+    left: -500px;
+    
+}
+
+.hide {
+    opacity: 0;
+}
+
+.change-wrapper {
+    position: fixed;
+    z-index: 1000;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .change{
+    display: inline-block;
     background: #f00;
     width: 65px;
     height: 65px;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 1000;
-    left:48%;
-    top:58%;
-    
+    border-radius: 32px;
 }
