@@ -1,31 +1,151 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <title> XIE JUN LU </title>
-   <link rel="icon" type="image/png" href="icon.png">
-   <link rel="stylesheet" type="text/css" href="style2.css">
+<title> XIE JUN LU </title>
+<link rel="icon" type="image/png" href="icon.png">
+
+<meta name="keywords" content="" />
+<meta name="description" content = "" />
+<meta name="viewport" content="width=device-width" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+<style>
+body {
+  background-image:url('junlu.png');
+  color: #fff;
+  font-family: "Avenir",Light,sans-serif;
+  font-size: 18pt;
+  color:grey;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 12pt;
+}
+.navi {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+}
+.navi-group {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.navi-list {
+  width: 100%;
+}
+.navi-menu {
+  position: fixed;
+  width: 25%;
+  bottom: 6%;
+  size: 0;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.navi-group:hover .navi-menu {
+  size: auto;
+  opacity: 1;
+}
+.navi-menu-item:hover {
+  cursor: pointer;
+}
+</style>
+
+<script type="text/javascript">
+var PREFIX = "bg-";
+var SUFFIX = ".jpg";
+
+var links = [
+  "http://link1",
+  "http://link2",
+  "http://link3",
+  "http://link4",
+  "http://link5",
+  "http://www.google.com",
+  "typeface/home.html",
+  "archive/myclass.html",
+  "sound/home.html",
+  "poem/home.html",
+  "drawing/home.html",
+  "http://link12",
+]
+
+$(document).ready( function() {
+  // Setting the background image when hovering
+  $(".navi-menu-item").hover(function(e) {
+    var hoverId = e.target.dataset.itemId;
+    $("body").css("background-image", 'url(' + PREFIX+hoverId+SUFFIX + ')');
+  });
+
+  // Setting background color back to black when leaving
+  $(".navi-menu-item").mouseleave(function(e) {
+    $("body").css("background-image", 'url(junlu.png)');
+  });
+
+  // Hyperlink when clicking
+  $(".navi-menu-item").click(function(e) {
+    var hoverId = e.target.dataset.itemId;
+    window.open(links[hoverId-1]);
+  });
+});
+
+</script>
+
 </head>
-
 <body>
-    <div class="container">
-        <div class="gif"></div>
-          
-        <div class="button">
-            <div class=option><a href="assignment1.html">COMPOSITION 1</a></div>
-            <div class=option><a href="composition2.html">COMPOSITION 2</a></div>
-            <div class=option><a href="sound/home.html">MY SPACE</a></div>
-            <div class=option><a href="typeface/home.html">TYPEFACE</a></div>
-            <div class=option><a href="archive/myclass.html">ARCHIVE</a></div>
-            <div class=option><a href="drawing/home.html">DRAWING</a></div>
-            <div class=option><a href="resize/main.html">RESIZE IT</a></div>
-            <div class=option><a href="poem/home.html">POEM GENERATOR</a></div>
-            <div class=option><a href="catch/home.html">CATCH</a></div>
-        </div>
+
+<div class="navi">
+  <div class="navi-group">
+    <div class="navi-menu" id="menu-1">
+      <ul>
+        <li class="navi-menu-item" data-item-id="1"> ART WORKS</li>
+        <li class="navi-menu-item" data-item-id="2"> CREATIVE WORKS</li>
+      </ul>
     </div>
+    <div class="navi-list" id="list-1"> ART WORKS</div>
+  </div>
+
+  <div class="navi-group">
+    <div class="navi-menu" id="menu-2">
+      <ul>
+        <li class="navi-menu-item" data-item-id="3"> FUTURE</li>
+        <li class="navi-menu-item" data-item-id="4"> TEA AND WINE</li>
+        <li class="navi-menu-item" data-item-id="5"> THE COAT </li>
+        <li class="navi-menu-item" data-item-id="6">DESIGN FOR CLIENTS </li>
+      </ul>
+    </div>
+    <div class="navi-list" id="list-2">DESIGN WORKS </div>
+  </div>
+
+  <div class="navi-group">
+    <div class="navi-menu" id="menu-3">
+      <ul>
+        <li class="navi-menu-item" data-item-id="7"> TYPEFACE</li>
+        <li class="navi-menu-item" data-item-id="8"> CLASS ARCHIVE</li>
+        <li class="navi-menu-item" data-item-id="9"> MY SPACE </li>
+        <li class="navi-menu-item" data-item-id="10">POEM GENERATOR </li>
+        <li class="navi-menu-item" data-item-id="11">DARWING TOOL </li>
+      </ul>
+    </div>
+    <div class="navi-list" id="list-2">WEB WORKS </div>
+  </div>
+
+  <div class="navi-group">
+    <div class="navi-menu" id="menu-4">
+      <ul>
+        <li class="navi-menu-item" data-item-id="12">JUNLU XIE </li>
+      </ul>
+    </div>
+    <div class="navi-list" id="list-3">ABOUT </div>
+  </div>
+</div>
+
 </body>
-
-
-
-
-
 </html>
+
