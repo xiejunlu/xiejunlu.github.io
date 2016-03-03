@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>HEART</title>
+   <style>
+    body { display: flex;
+      background-color:white;
+    }
+    canvas {
+      border: 1px solid black;
+      margin: auto;
+      background-color: white;
+      border-radius: 30%;
+      width: 30em;
+      height: 30em;
+      padding: 2.8em;
+      border: dashed 1px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <canvas id="surface"></canvas>
+
+    <script>
+     var surf = document.getElementById("surface");
+     var ctx = surf.getContext("2d");
+     var stamp = function(img, x, y, w, h){
+       ctx.drawImage(img, x-w/2, y-h/2, w, h);
+    };
+
+$("surface").click(function() {
+     console.log(1);
+     var newColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+      $("body").css("background-color",newColor);
+      $("canvas").css("background-color",newColor);
+});
+    
+    
+    
+     var randomArrayNumber = Math.round(Math.random() * 4);
+
+     surf.onclick = function(e){
+
+       stamp(h1, e.offsetX, e.offsetY, 100, 100);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
