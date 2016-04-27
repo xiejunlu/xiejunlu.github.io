@@ -12,9 +12,10 @@
 <script>
 var input;
 var analyzer;
+var dim;
 
 function setup() {
-  createCanvas($(window).width(), $(window).height());
+  createCanvas(windowWidth, windowHeight);
   background(300);
   // Create an Audio input
   mic = new p5.AudioIn();
@@ -27,28 +28,98 @@ function setup() {
   frameRate(10);
 }
 
+function draw_face(size, angle, x, y, r, g, b) {
+ 
+  stroke(250, 250, 250);
+  strokeWeight(size/40);
+  
+  // move paper
+  translate(x, y);
+  rotate(angle);
+  
+  ellipse(0, 0, size, size);
+  drawGradient(size, r, g, b); // size is the red amount in drawGradient
+
+  stroke(r, 20, b);
+  strokeWeight(size/40);
+  noFill();
+  
+
+  // where to put compass, how far to stretch, angle to start, angle to end
+  arc(0, size/5, size/2.5, size/2.5, TWO_PI, PI);
+  arc(40, size/14, size/10, size/7, PI, TWO_PI);
+  arc(-40, size/14, size/10, size/7, PI, TWO_PI);
+  //arc(x, y, vol_normed-10, vol_normed-25, 50, 170, OPEN);
+  //arc(x, y, vol_normed-50, vol_normed-45, -10, PI, OPEN);
+  
+  // move paper back
+  rotate(-angle);
+  translate(-x, -y);
+  
+}
+
+
 function draw() {
   // Get the overall volume (between 0 and 1.0)
   var vol = mic.getLevel();
-  var vol_normed = map(vol, 0, 0.1, 0, 255);
-  console.log(vol_normed)
-  var c = color(vol_normed, 50, 100);
-  fill(c);
-  stroke(300);
-  strokeWeight(3);
+ 
+  console.log(vol);
+ 
+  var size = map(vol, 0, 1.0, 0, 700);
+  size *= 3; 
+  if(size > 700) { size = 700; }
+  
+  var red = map(vol, 0, 1.0, 0, 255);
+  red *= 2; 
+  if(red > 255) { red = 255; }
+  
+  var blue = map(vol, 0, 1.0, 0, 200);
+  blue *= 2; 
+  if(blue > 200) { blue = 200; }
+  
+  var green = map(vol, 0, 1.0, 0, 250);
+  green *= 3; 
+  if(green > 250) { green = 250; }
+  
+  
+  // var c = color(vol_normed, 50, 100);
+  // fill(c);
+  
+  var angle = -20 + Math.random() * 40; // -20 --- 20
 
-  var width = $(window).width()*Math.random();
-  var height = $(window).height()*Math.random();
-  ellipse(width, height, vol_normed, vol_normed);
-  arc(width, height, vol_normed-25, vol_normed-10, 30, 150, OPEN);
-  arc(width, height, vol_normed-10, vol_normed-25, 50, 170, OPEN);
-   arc(width, height, vol_normed-50, vol_normed-45, -10, PI, OPEN);
+  draw_face(size, angle, windowWidth*Math.random(), windowHeight*Math.random(), red, blue, green);
+  
+  //size, angle, x, y, r, g, b
+  draw_face(160, 0, windowWidth/2, windowHeight/2, red, blue, green);
+
+
+  
   // ellipse($(window).width()*Math.random(), $(window).height()*Math.random(), vol_normed, vol_normed);
   // arc(h,h,50,0,Math.PI*2,true); // Outer circle
   // arc(h,h,35,0,Math.PI,false);  // Mouth (clockwise)
   // arc(h-10,h-5,5,0,Math.PI*2,true);  // Left eye
   // arc(h+30,h-5,5,0,Math.PI*2,true);  // Right eye
 }
+
+
+function drawGradient(radius, r, g, b) {
+  noStroke();
+  var c_r = r;
+  var c_g = g;
+  var c_b = b;
+  for (var r = radius; r > 0; --r) {
+    fill(c_r, c_g, c_b);
+    ellipse(0, 0, r, r);
+    c_r = (c_r + 1);
+    if (c_r > 255) {
+      c_g += 1;
+    }
+    if (c_g > 255) {
+      c_b += 1;
+    }
+  }
+}
+
 </script>
 </head>
 
